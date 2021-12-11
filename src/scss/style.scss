@@ -1,0 +1,21 @@
+@import url('./card.scss');
+@import url('./tabs.scss');
+@import url('./create.scss');
+@import url('./post.scss');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+.container {
+    max-width: 480px;
+    margin: auto;
+    padding: 0 15px;
+}
+
+.hide {
+    display: none;
+}

@@ -1,0 +1,76 @@
+.header {
+    padding: 200px 0;
+    background-color: rgb(64, 60, 68);
+    .header-wrapper {
+        margin-bottom: 30px;
+        padding: 40px 65px;
+        border: 2px solid yellow;
+        background-color: #FFFFFF;
+        border-radius: 20px;
+        .title {
+            color: coral;
+            text-align: center;
+            font-size: 24px;
+            margin-bottom: 30px;
+            line-height: 24px;
+        }
+        .subtitle {
+            text-align: center;
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 14px;
+            color: rgb(0, 204, 255);
+            margin-bottom: 50px;
+        }
+        .header-button {
+            display: block;
+            border: none;
+            text-transform: uppercase;
+            width: 170px;
+            height: 30px;
+            background-color: coral;
+            border-radius: 15px;
+            margin: auto;
+            color: cornsilk;
+            font-weight: 400;
+            font-size: 14px;
+            cursor: pointer;
+            transition: 0.2s;
+        }
+        .header-button:hover {
+            background-color: cornsilk;
+            color: coral;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+        }
+        .header-button:active {
+            color: red;
+            box-shadow: inset 0 0 10px rgba(80, 80, 80, 0.5);
+        }
+    }
+    .hand-pointer {
+        width: 30px;
+        height: 30px;
+        margin: auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        i {
+            color: yellow;
+            font-size: 30px;
+            animation-name: hand;
+            animation-duration: 1.5s;
+            animation-iteration-count:infinite;
+            animation-timing-function: ease-out;
+        }
+        @keyframes hand {
+            50% {
+                font-size: 20px;
+            }
+            100% {
+                font-size: 30px;
+            }
+        }
+    }
+}
+
