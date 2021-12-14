@@ -1,5 +1,5 @@
 import {Component} from '../core/components'
-export class HeaderComponent extends Component {
+export class HeaderComponents extends Component {
     constructor(id){
         super(id)
     }
@@ -11,5 +11,7 @@ export class HeaderComponent extends Component {
 }
 
 function buttonHandler() {
+    //добавляем в Local storage
+    localStorage.setItem("visited", JSON.stringify(true));
     this.hide()
 }
