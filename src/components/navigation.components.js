@@ -1,7 +1,8 @@
 import {Component} from '../core/components'
 export class NavigationComponents extends Component {
     constructor(id){
-        super(id)
+        super(id);
+        this.tabs = [];
     }
     init (){
         // const TABS = this.$el.querySelectorAll('.tabs-item')
@@ -21,4 +22,14 @@ function tabClickHandler(event) {
         });
     }
     event.target.classList.add("active");
+
+    const activeTab = this.tabs.find((temp) => {
+        return temp.name === event.target.dataset.name;
+    });
+    // скрывает все табы
+    this.tabs.forEach((temp) => {
+        return temp.component.hide();
+    });
+    // Показывает активный таб
+    activeTab.component.show();
 }

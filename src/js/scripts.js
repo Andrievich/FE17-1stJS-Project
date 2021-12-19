@@ -9,3 +9,9 @@ const navigation = new NavigationComponents('#navigation');
 const posts = new PostsComponents('#posts');
 const create = new CreateComponents('#create');
 const favorite = new FavoriteComponents('#favorite');
+
+navigation.registerTabs([
+    {name: 'create', component: create},
+    {name: 'posts', component: posts},
+    {name: 'favorite', component: favorite},
+]);

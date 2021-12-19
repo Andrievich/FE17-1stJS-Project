@@ -10,8 +10,12 @@ export class HeaderComponents extends Component {
     }
 }
 
+const section = document.querySelector('.section');
+
 function buttonHandler() {
     //добавляем в Local storage
     localStorage.setItem("visited", JSON.stringify(true));
-    this.hide()
+    this.hide();
+    // убираем hidе для основной секции
+    section.classList.remove('hide');
 }
